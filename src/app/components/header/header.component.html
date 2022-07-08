@@ -1,0 +1,22 @@
+<div class="app-header header">
+    <div class="container-fluid">
+        <div class="d-flex">
+            <a class="header-brand" routerLink="/dashboard">
+                <img src="assets/images/logo/Chrono-logo.png" class="header-brand-img desktop-logo  " alt="My Happy Plays Logo">
+                <img src="assets/images/logo/Chrono-logo.png" class="header-brand-img mobile-view-logo" alt="My Happy Plays Logo">
+            </a>
+            <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar"></a>
+            <div class="d-flex order-lg-2 ml-auto header-right-icons header-search-icon" (click)="logout()">
+                <div class="dropdown text-center selector profile-1">
+                        <span><img src="assets/images/boy-face.png" alt="profile-user" class="avatar avatar-sm brround cover-image mb-1 ml-0"></span>
+                        <span class=" ml-3 d-none d-lg-block ">
+                <span class="text-white ">{{userName | titlecase}}</span>
+                        </span>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="header-toggler d-lg-none ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+                <span class="header-toggler-icon"></span>
+            </a>
+        </div>
+    </div>
+</div>
