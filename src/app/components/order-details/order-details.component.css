@@ -11,3 +11,17 @@
     width: 60%;
     margin-right: 10px;
 }
+.ordered-prod-color{
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    border-radius: 6px;
+    top: 50px;
+    border: 2px solid black;
+  }
+  .ordered-prod-nil{
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 50px;
+  }

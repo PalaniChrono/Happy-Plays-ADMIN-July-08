@@ -31,6 +31,7 @@ export class OrderDetailsComponent implements OnInit {
     this.loading = true;
     this.apiService.getData('getOrderDetails', this.route.snapshot.paramMap.get('id')).subscribe((data) => {
       this.orderDetails = data.data;
+      // alert(this.orderDetails.ordered_products.color);
       if (this.orderDetails.order_tracking_id) {
         this.trackId = this.orderDetails.order_tracking_id;
       }
